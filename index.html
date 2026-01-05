@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhyani Film Studio | Karan Goswami</title>
+    <meta name="description"
+        content="Premium Filmmaking Services by Karan Goswami. Book your slot for weddings, highlights, and reels.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+    </div>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <img src="filmmaker-logo.png" alt="Filmmaker Logo" class="brand-logo">
+                </div>
+                <h1 class="brand-name">Filmmaker</h1>
+                <p class="owner-name">Owner: Karan Goswami</p>
+            </div>
+            <div class="hero-tagline">
+                <h2>Cinematic Excellence</h2>
+                <div class="divider"></div>
+            </div>
+        </header>
+
+        <!-- Services Section -->
+        <section class="services-container">
+
+            <!-- Regular Job -->
+            <div class="category-group">
+                <h3 class="category-title">Regular Job</h3>
+
+                <div class="service-card" onclick="toggleService('wedding-part-1')">
+                    <div class="service-info">
+                        <span class="service-name">Wedding Part 1</span>
+                        <span class="service-price">₹1000</span>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="wedding-part-1" data-price="1000"
+                            data-name="Wedding Part 1 - Regular">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="toggleService('wedding-highlight')">
+                    <div class="service-info">
+                        <span class="service-name">Wedding Highlight</span>
+                        <span class="service-price">₹1000</span>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="wedding-highlight" data-price="1000" data-name="Wedding Highlight">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="toggleService('wedding-teaser')">
+                    <div class="service-info">
+                        <span class="service-name">Wedding Teaser</span>
+                        <span class="service-price">₹1000</span>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="wedding-teaser" data-price="1000" data-name="Wedding Teaser">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="toggleService('reels')">
+                    <div class="service-info">
+                        <span class="service-name">Reels</span>
+                        <span class="service-price">₹500</span>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="reels" data-price="500" data-name="Reels">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="toggleService('couple-song')">
+                    <div class="service-info">
+                        <span class="service-name">Couple Song / Title</span>
+                        <span class="service-price free">Free</span>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="couple-song" data-price="0" data-name="Couple Song / Title">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi Job -->
+            <div class="category-group">
+                <h3 class="category-title">Multi Job</h3>
+
+                <div class="service-card" onclick="toggleService('multi-wedding-part-1')">
+                    <div class="service-info">
+                        <span class="service-name">Wedding Part 1</span>
+                        <span class="service-price">₹1500</span>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="multi-wedding-part-1" data-price="1500"
+                            data-name="Wedding Part 1 - Multi">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="toggleService('cinematic-highlight')">
+                    <div class="service-info">
+                        <span class="service-name">Cinematic Highlight</span>
+                        <span class="service-price">₹1500</span>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="cinematic-highlight" data-price="1500"
+                            data-name="Cinematic Highlight">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Powered -->
+            <div class="category-group ai-group">
+                <div class="ai-badge-container">
+                    <h3 class="category-title">AI Powered Services</h3>
+                    <span class="ai-badge">✨ AI Powered</span>
+                </div>
+
+                <div class="service-card ai-card" onclick="toggleService('ai-reels')">
+                    <div class="service-info">
+                        <span class="service-name">AI Reels</span>
+                        <span class="service-price">₹1000</span>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="ai-reels" data-price="1000" data-name="AI Reels">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </div>
+
+                <div class="service-card ai-card" onclick="toggleService('ai-highlight')">
+                    <div class="service-info">
+                        <span class="service-name">AI Highlight</span>
+                        <span class="service-price">₹2000</span>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="ai-highlight" data-price="2000" data-name="AI Highlight">
+                        <span class="custom-checkbox"></span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact & Location Section -->
+        <section class="contact-section">
+            <h3 class="category-title">Visit Our Studio</h3>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14828.694600000001!2d70.96!3d21.49!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI5JzI0LjAiTiA3MMKwNTcnMzYuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="location-text">
+                    <p>📍 Dhyani Film Studio, Bagasara</p>
+                    <a href="https://maps.app.goo.gl/mTyBDw41XWTa3tQ79" target="_blank" class="view-map-link">View on
+                        Google Maps</a>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/filmmaker_2.o?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    class="social-btn instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://wa.me/919904863345" class="social-btn whatsapp">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                        </path>
+                    </svg>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="tel:+919904863345" class="social-btn phone">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <span>Call Now</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Booking Summary (Sticky Bottom) -->
+        <section class="booking-summary" id="booking-summary">
+            <div class="summary-content">
+                <div class="summary-header">
+                    <h4>Selected Services</h4>
+                    <span class="total-price" id="total-price">₹0</span>
+                </div>
+                <ul class="selected-list" id="selected-list">
+                    <li class="empty-state">No services selected</li>
+                </ul>
+                <button id="book-btn" class="book-btn" disabled>
+                    <span class="btn-text">Book Your Slot</span>
+                    <span class="btn-icon">📅</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Spacer for sticky footer -->
+        <div class="footer-spacer"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
